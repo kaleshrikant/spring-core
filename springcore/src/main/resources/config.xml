@@ -19,7 +19,6 @@
         <property name="studentAddress">
             <value>Amravati, Maharastra</value>
         </property>
-
+       
     </bean>
-
 </beans>
