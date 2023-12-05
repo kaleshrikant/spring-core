@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+<bean class="com.spring.core.Employee" name="employee">
+    <property name="name" value="Shrikant Kale"/>
+    <property name="phones">
+        <list>
+            <value>Nokia</value>
+            <value>Motorola</value>
+            <value>Samsung</value>
+            <value>Apple</value>
+            <value>Xiaomi</value>
+            <value>RealMe</value>
+        </list>
+    </property>
+    <property name="addresses">
+        <set>
+            <value>Amravati</value>
+            <value>Maharastra</value>
+            <value>India</value>
+        </set>
+    </property>
+    <property name="courses">
+        <map>
+            <entry key="Java" value="2 Months"/>
+            <entry key="Python" value="1 Months"/>
+            <entry key="Spring" value="3 Months"/>
+        </map>
+    </property>
+</bean>
+</beans>
