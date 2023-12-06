@@ -8,7 +8,7 @@ public class AppRunner {
 
         AbstractApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("config.xml");
 
-        Samosa addition = (Samosa) classPathXmlApplicationContext.getBean("samosaBean");
+        Pepsi pepsi = (Pepsi) classPathXmlApplicationContext.getBean("pepsiBean");
 
             // registring shutdownHook
         classPathXmlApplicationContext.registerShutdownHook();
