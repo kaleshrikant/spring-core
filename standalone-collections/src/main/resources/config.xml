@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xmlns:util="http://www.springframework.org/schema/util"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd ">
+
+<!--  STAND-ALONE LIST  -->
+    <util:list list-class="java.util.LinkedList" id="myBestFriends">
+        <value>Me</value>
+        <value>Myself</value>
+        <value>I</value>
+    </util:list>
+
+
+<!--  STAND-ALONE MAP  -->
+    <util:map map-class="java.util.TreeMap" id="feeStructureRef">
+        <entry key="Spring Framework" value="8000"/>
+        <entry key="Django Framework" value="5000"/>
+        <entry key="Hibernate Framework" value="2000" />
+    </util:map>
+
+<!--  STAND-ALONE PROPERTIES  -->
+    <util:properties id="dbConfigRef">
+        <prop key="driver-name">com.mysql.jdbc.driver</prop>
+        <prop key="database-uri">mysql:jdbc://localhost:306/database</prop>
+        <prop key="user-name">shrikant</prop>
+        <prop key="user-password">kale</prop>
+
+    </util:properties>
+
+
+    <bean class="com.spring.core.Person" name="personBean">
+        <property name="friendList" ref="myBestFriends"/>
+        <property name="feeStructureMap" ref="feeStructureRef"/>
+        <property name="dbProperties" ref="dbConfigRef"/>
+    </bean>
+
+</beans>
