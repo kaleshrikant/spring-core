@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd"> 
+
+    <bean class="com.spring.core.Address" name="address1">
+        <property name="street" value="Street Name 1"/>
+        <property name="city" value="City Name 1"/>
+    </bean>
+
+<!--   byName -->
+    <bean class="com.spring.core.Employee" name="employeeBeanByName" autowire="byName"/>
+
+<!--   byType -->
+    <bean class="com.spring.core.Employee" name="employeeBeanByType" autowire="byType"/>
+<!--
+    will get error : expected single matching bean but found 2: address1,address2
+        <bean class="com.spring.core.Address" name="address2">
+            <property name="street" value="Street Name 2"/>
+            <property name="city" value="City Name 2"/>
+        </bean>
+-->
+
+<!--   constructor -->
+    <bean class="com.spring.core.Employee" name="employeeBean" autowire="constructor"/>
+</beans>
