@@ -1,0 +1,8 @@
+
+L
+java:S6829"*Add @Autowired to one of the constructors.(¯¶´Ôûÿÿÿÿ8©·é¥Ä1
+Ð
+java:S6804"­Either replace the "@Value" annotation with a standard field initialization, use "${propertyName}" to inject a property or use "#{expression}" to evaluate a SpEL expression.(à½®ìýÿÿÿÿ8¯·é¥Ä1
+Ð
+java:S6804
+"­Either replace the "@Value" annotation with a standard field initialization, use "${propertyName}" to inject a property or use "#{expression}" to evaluate a SpEL expression.(Ö³øüúÿÿÿÿ8¯·é¥Ä1
