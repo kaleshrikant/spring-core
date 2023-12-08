@@ -1,0 +1,7 @@
+
+X	java:S125"<This block of commented-out lines of code should be removed.(Ò÷õñ8ÎåšÏÄ1
+L
+java:S1905"*Remove this unnecessary cast to "Student".(Û”üóşÿÿÿÿ8ĞåšÏÄ1
+G	java:S106"+Replace this use of System.out by a logger.(œÀõß8ÒåšÏÄ1
+
+java:S1128"_Remove this unused import 'org.springframework.context.support.ClassPathXmlApplicationContext'.(•ËÛüÿÿÿÿ8ÔåšÏÄ1
